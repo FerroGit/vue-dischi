@@ -11,17 +11,23 @@
 <body>
     
     <div id="app">
-        <header>
-            <div class="genre">pop</div>
-            <div class="genre">rock</div>
-            <div class="genre">metal</div>
-            <div class="genre">jazz</div>
+        <header >
+            <h1>choose your style</h1>
+            <select name="genre" v-model="type">
+                <option value="">All</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Metal">Metal</option>
+            </select>
         </header>
     
         <main>  
                 <!-- create single container for each album -->
-                <div class="container"
-                v-for="album in albums"
+                <div 
+                    class="container"
+                    v-for="album in albums" 
+                    v-if="album.genre.includes(type)"
                 >
                 <div class="poster">
                     <img :src="album.poster" alt="poster">

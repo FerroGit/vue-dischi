@@ -18,19 +18,24 @@ body{
 /* header */
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 60%;
     margin: auto;
     padding-top: 50px;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color:  rgb(226, 226, 226);
 }
 
-header .genre{
-    padding-bottom: 2px;
-    font-size: 40px;
+header select {
+    margin-left: 20px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 226);
+    text-transform: uppercase;
     cursor: pointer;
 }
+
 
 /* main */
 main{
