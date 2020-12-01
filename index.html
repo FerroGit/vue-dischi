@@ -9,11 +9,23 @@
 </head>
 
 <body>
-    <main id="app">
+    <main id="app">  
+
+        <!-- create single container for each album -->
         <div class="container"
-            v-for="album in albums">
-            <div class="copertina">
+            v-for="album in albums"
+        >
+            <div class="poster">
                 <img :src="album.poster" alt="poster">
+            </div>
+            <div class="title">
+                {{album.title}}
+            </div>
+            <div class="author">
+                {{album.author}}
+            </div>
+            <div class="year">
+                {{album.year}}
             </div>
         </div>
     </main>
