@@ -6,4 +6,71 @@
 
 img{
     width: 200px;
+    max-height: 180px;
+}
+
+
+body{
+    background-color: #172d3f;
+}
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+header .genre{
+    padding-bottom: 2px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width:70%;
+    padding-top: 50px;
+    margin: auto;
+}
+
+
+/* album */
+.container{
+    width:calc(25% - 80px);
+    margin:10px 15px 0 0;
+    background-color: #222631b7;
+    text-align: center;
+    cursor: pointer;
+}
+.poster img {
+    margin: 20px 5px 10px;
+}
+
+.title{
+    padding:5px;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.author,
+.year {
+    padding: 5px;
+    font-size: 12px;
+    color:#a7a7a7;
+}
+
+.year{
+    margin-bottom: 30px;
 }

@@ -9,27 +9,35 @@
 </head>
 
 <body>
-    <main id="app">  
-
-        <!-- create single container for each album -->
-        <div class="container"
-            v-for="album in albums"
-        >
-            <div class="poster">
-                <img :src="album.poster" alt="poster">
+    
+    <div id="app">
+        <header>
+            <div class="genre">pop</div>
+            <div class="genre">rock</div>
+            <div class="genre">metal</div>
+            <div class="genre">jazz</div>
+        </header>
+    
+        <main>  
+                <!-- create single container for each album -->
+                <div class="container"
+                v-for="album in albums"
+                >
+                <div class="poster">
+                    <img :src="album.poster" alt="poster">
+                </div>
+                <div class="title">
+                    {{album.title}}
+                </div>
+                <div class="author">
+                    {{album.author}}
+                </div>
+                <div class="year">
+                    {{album.year}}
+                </div>
             </div>
-            <div class="title">
-                {{album.title}}
-            </div>
-            <div class="author">
-                {{album.author}}
-            </div>
-            <div class="year">
-                {{album.year}}
-            </div>
-        </div>
-    </main>
-
+        </main>
+    </div>
 </body>
 <script src="js/script.js" charset="utf-8"></script>
 
